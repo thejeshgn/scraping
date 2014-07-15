@@ -21,15 +21,16 @@ python scrape.py
 
 
 ### Export data as json and csv ####
+You will have to edit export.yaml for the correct tables which you want to export
+
 `
-#you will have to edit export.yaml for the correct tables which you want to export
 datafreeze export.yaml
 `
 
 ### Export data as dbf ####
+Depends on csv files created above so first created them. You will have to edit export_dbf.py for the correct csv and column names
+
 `
-#depends on csv files created above so first created them
-#you will have to edit export_dbf.py for the correct csv and column names
 python export_dbf.py
 `
 
