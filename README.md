@@ -56,7 +56,7 @@ Data Scraper IMD data scrapes reservoir data and saves into SQLITE. Can also exp
 Copyright (C) 2014  Thejesh GN <i@thejeshgn.com>
 
 ### Data
-Data is under ODC Open Database License (ODbL)
+Data is under [ODC Open Database License (ODbL)](license_data_odblv1.txt)
 
 ### Code
-Data is under GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+Data is under [GNU GENERAL PUBLIC LICENSE Version 3](license_code_gplv3.txt)
