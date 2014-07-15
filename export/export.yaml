@@ -1,0 +1,14 @@
+common:
+  database: "sqlite:///../database/data.sqlite"
+  prefix: .
+  format: csv
+
+exports:
+
+  - query: "select * from example "
+    filename: "csv/example.csv"
+    format: csv
+
+  - query: "select * from example "
+    filename: "json/example.json"
+    format: json

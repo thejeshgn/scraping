@@ -1,0 +1,317 @@
+1. Getting ward info
+	 --Ward info exists. Not getting.
+2. Get Street info for each ward
+	 --No wards to continue...
+3. Getting Property Tax
+02'^WD-05'^24
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>CCMC</title>
+<link rel="stylesheet" href="css/ccmc-style_new.css" type="text/css"/>
+<link rel="stylesheet" href="css/chromestyle.css" type="text/css" />
+
+<script type="text/javascript" src="js/chrome.js">
+var flag ="pageheader1.asp"
+function fnrgctamil()
+{	
+	//window.open('DwnldForms/Eng section/List of Registered Contractors.pdf','popup','status=1,toolbar=no,menubar=no,left=0,top=0,scrollbars=no,resizable=yes,maximize=yes')
+}
+</script>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+    	<div id="logo"></div>
+		<div id="search" style="display:none">
+			<table width="100%" border="0" cellpadding="0" cellspacing="1">
+			<tr><td nowrap="nowrap">
+				<a href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=45&amp;Itemid=40" class="mainlevel" id="active_menu">Home</a>
+				<span class="mainlevel"> | </span>
+				<a href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=24&amp;Itemid=38" class="mainlevel" >Sitemap</a>
+				<span class="mainlevel"> | </span>
+				<a href="https://www.ccmc.gov.in/ccmc/index.php?option=com_content&amp;view=article&amp;id=58&amp;Itemid=43" class="mainlevel" >Contacts</a>
+				</td></tr></table>
+			<form action="index.php" method="post">
+				<div class="search">
+					<input name="searchword" id="mod_search_searchword" maxlength="20" alt="Search" class="inputbox" type="text" size="20" value="search..."  onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" />
+				</div>
+			</form>
+		</div>
+		<div id="social-net" style="display:none"><a href="http://www.facebook.com/pages/Cbecorp/187855327919362" target="_blank" ><img src="images/facebook-icon.png" /></a> &nbsp; <a href="http://twitter.com/Cbecorp" target="_blank"><img src="images/twitter-icon.png" /></a></div>
+    </div>
+    <div id="menu">
+		<div class="chromestyle" id="chromemenu">
+		<ul>
+		<li><a href="https://www.ccmc.gov.in/ccmc/index.php">Home</a></li>
+<!--	<li><a href="MyCorpServiceTax.asp">My Taxes</a></li>
+		<li><a href="#" rel="dropmenu2">Development Works</a></li>-->
+		<li><a href="#" rel="dropmenu3">Revenue Items</a></li>	
+		<li><a href="#" rel="dropmenu4">Collections</a></li>
+<!-- 	<li><a href="#" rel="dropmenu5">Collection Centers</a></li>		 -->
+		<li><a href="#" rel="dropmenu6">Transactions</a></li>		
+		<li><a href="frmAdditionalHome.asp" >Reports</a></li>
+		<li><a href="#" rel="dropmenu7">DCB</a></li>
+		<li><a href="frmlegallogout.asp">Sign out</a></li>
+		</ul>
+		</div>
+		
+
+		
+		 
+
+
+		
+
+		<!--2nd drop down menu -->                                                
+		<div id="dropmenu2" class="dropmenudiv" style="width: 250px;">
+			<a href="frmOngoingWorks.asp">Ongoing Works</a>
+			<a href="frmOngoingWorksByOff.asp">Ongoing Works By Ward</a>
+			<a href="frmCompletedWorks.asp">Completed Works</a>
+			<a href="frmCompletedWorksByOff.asp">Completed Works By Ward </a>
+			<a href="frmfinyearwisecompletedworks.asp">Completed Works By Financial Year</a>
+			<a href="frmGenAbsractList.asp" >General Abstract</a>
+			<a href="frmAeJeWorks.asp" >Works By &nbsp;AE / JE</a>
+			<a href="frmDetailedDevelopmentWorks.asp">Detailed Work Report</a>
+			<a href="frmWorkAbstract.asp">Detailed Work Abstract</a>
+			<a href="repDateWiseReport.asp">Ongoing Works Entry - Between Date</a>
+
+			<a href="frmBillPendingCompleted.asp">Bill - Detailed Report</a>
+			<a href="frmTenderAllotView.asp">Tender Results</a>
+			<a href="frmTenderView.asp">Tender Announcement</a>
+			<a href="frmCSanction.asp">C - Sanction Details</a>
+			<a href="javascript:fnrgctamil()">List of Registered Contractors</a>
+
+			<a href="frmjnnurm.asp">JNNURM <img src='images/neww.gif'> </a>
+			<a href="frmViewPlumber.asp">Plumbers List</a>
+			<a href="frmCompletedWorks1.asp">Completed Works Before 2005-2006</a>
+		</div>
+
+		<!--3rd drop down menu -->                                                   
+		<div id="dropmenu3" class="dropmenudiv" style="width: 250px;">
+			<a href="repAssesseeDet.asp?type=P">Property Tax</a>
+			<a href="repAssesseeDet.asp?type=W">Water Charges</a>
+			<a href="repVLTDet.asp">Vacant Land Tax</a>
+			<a href="repNTDet.asp">Non Tax</a>
+			<a href="repNTDet_exe.asp">Non Tax-Excluding Govt Item & Court Case</a>
+			<a href="repNTDet_court.asp">Non Tax Court Case</a>
+			<a href="repNTDet_Govt.asp">Non Tax Govt Item</a>
+			<a href="repNTDet_TNEB.asp">Non Tax TNEB</a>
+			<a href="repNTDet_Arrear.asp">Non Tax-Demolished</a>
+			<a href="repNTDet_1.asp">Non Tax Annual Lease Item</a>
+			<a href="RepPFTDet.asp">Professional Tax</a>
+			<a href="RepDNOTrade.asp">D&O Trades</a>
+			<a href="RepPFATradeDet.asp">PFA Trades</a>
+			<a href="repNTDet_.asp">MISC-1045(7) Garbage</a>
+<a href="repNTDet_FA.asp">Bus Shelter</a>
+<a href="repNTDet_FP.asp">Foot Path</a>
+		<a href="repNTDet_OFC.asp">1100(2) - Annual Track Rent Optic Cables</a>
+
+		</div>
+
+		<!--4rd drop down menu -->                                                   
+		<div id="dropmenu4" class="dropmenudiv" style="width: 250px;">
+			<a href="frmBankSelection.asp">Bankwise</a>
+			<a href="frmFECSelectiont.asp">Facilitation Centerwise</a>
+			<a href="frmZoneSelection1_newt.asp">Zonewise</a>
+			<a href="frmZoneWiseBankSelection.asp">Zonewise - Bank</a>
+			<a href="frmWardSelection.asp">Wardwise</a>
+			<a href="frmColServiceSelection.asp">Servicewise</a>
+			<a href="frmbreakupview.asp">Break Up View</a>
+			<a href="cbrv.asp">BRV Statements</a>
+			<a href="repOverAllCollection.asp">Overall Collection</a>
+			<a href="frmFECSelectionCC.asp">Credit Card Collection</a>
+			<a href="repipay.asp">I.P.G Collection</a>
+		</div>
+
+		<!--5rd drop down menu -->                                                   
+	<!-- 	<div id="dropmenu5" class="dropmenudiv" style="width: 250px;">
+						
+			<a href="frmVwBanks.asp">List of Banks</a>
+			<a href="frmVwFEC.asp">Facilitation Centers</a>
+			<a href="frmCreditCardCenters.asp">Credit Card Collection Centers</a>
+		</div> -->
+
+		<!--6rd drop down menu -->                                                   
+		<div id="dropmenu6" class="dropmenudiv" style="width: 250px;">						
+			<a href="FrmVwServiceTransaction.asp">Datewise</a>
+			<a href="frmCollectionsReport.asp">Monthwise</a>
+			<a href="FrmVwTransactionsByBank.asp">Bankwise</a>
+			<a href="FrmVwTransactionsByFc.asp">Facilitation Centerwise</a>
+			<a href="frmColCompSelection.asp">Collection Comparisions</a>
+		</div>
+
+		<!--7rd drop down menu --> 
+		<div id="dropmenu7" class="dropmenudiv" style="width: 250px;">
+			<a href="frmsdcb.asp">YEAR WISE DCB</a>			
+			<a href="frmsdcbwd.asp">WARD WISE DCB</a>
+			<a href="frmsdcb1213new_.asp">SUPPLEMENTARY DCB</a>
+			<a href="dcblogin.asp">DCB RUN</a>
+			<a href="dcb1new.asp">SUPPLEMENTARY DCB RUN</a>
+		</div>
+
+		
+		<script type="text/javascript">
+
+		cssdropdown.startchrome("chromemenu")
+
+		</script>
+	</div>
+	<div id='bgdivId' style='display:none;'><img src="images/ccmc-bg1.jpg"/></div> 
+	<script type="text/javascript">
+		if(document.URL!=null && document.URL!=undefined
+			&& document.URL.indexOf("pageheader1.asp")>0)
+		{
+			document.getElementById("bgdivId").style.display = "";            
+		}else{
+			document.getElementById("bgdivId").style.display = "none";
+		}
+	</script>
+ </body>
+ </html>
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>:- Coimbatore City Municipal Corporation -:- Assesee Details</title>
+</head>
+<link rel="stylesheet" href="hi.css">	
+<link rel="stylesheet" href="css/ccmc-style.css" type="text/css" />
+<link rel="stylesheet" href="css/ccmc-style.css" type="text/css" />
+<body onUnLoad="fnUnloadRepWin()" class="new">
+<form name="frmAssDetails">
+<input type="hidden" name="hdnCode" value="">
+<center>
+		
+
+
+<SCRIPT LANGUAGE="JavaScript1.2" SRC="PrintReport.js" TYPE='text/javascript'></SCRIPT>
+<script language="Javascript1.2">
+	function fnPrint()
+	{
+		var title = 'Print...';
+		
+		var cssStyleSheet = 'hi';
+
+		var header = '<table border="0"  cellspacing="0" align=center><tr height=50>';
+		header = header + '<td align=center width="100%"><b>Property Tax - Assessee Details for ABIRAMI NAGAR in WD-05<br>';
+		header = header + 'As On<font color=red> 9-Jul-201412:36:11 PM</font></b></th></b></td></tr></table>';
+		var content = document.getElementById("d1");
+
+		fnRepPrint(title,cssStyleSheet,header,content);
+	}    
+</script>
+
+<table  cellpadding="0" cellspacing="2" border="0">
+	<tr><td align="left"><b>00&nbsp;:&nbsp;00&nbsp;:&nbsp;156</b></td>
+	<td align="right">
+		
+			<a href="Javascript:fnPrint();" title="Print..." onmouseover="window.status='Print...';return true;" onmouseout="window.status='';return true;"><img src="images/icon-printer.gif" border="0" X-CLARIS-USEIMAGEHEIGHT X-CLARIS-USEIMAGEWIDTH  title="Print..." onmouseover="window.status='Print...'" onmouseout="window.status=''"></a>
+			
+	</td></tr>	
+</table>
+
+	  <table border=0 align="center">
+      <tr>
+        <td align=center width="100%"><b>
+        
+				Property Tax - 
+		
+         	 Assessee Details for ABIRAMI NAGAR in WD-05<br>
+        As On<font color=red> 9-Jul-201412:36:11 PM</font></b></th></b></td>
+      </tr>
+      </table>
+      
+      <div id="d1" name="d1"><br>
+      
+    
+	<font face="Verdana" size="1" color="red" ><b>*</b></font>
+	<font face="Verdana" size="1" color="#000080">-Category : <b>A</b> - Appeal , <b>C</b> - Collectable , <b>G</b> - Goverment , <b>I</b> - Institutions , <b>S</b> - Sick Mill</font><br><br>
+	<table border=0 width=100% cellpadding =0 cellspacing=0>
+	<tr><td>	
+	<table border=0 cellpadding =0 cellspacing=2 Class="tableStyle">	  
+		<tr>
+			<th align=center class="title" title="#">#</th>
+			<th align=center class="title" title="Ward">Ward</th>
+			<th align=center class="title"" title="Assessment No.">Asst No.</th>			
+			<th align=center class="title" title="Assessee Name & Address">Name&Address</th>
+			<th align=center class="title" title="Category">Category</th>
+			<th align=center class="title" title="Half-Yearly Tax Amount">Half-Yearly<br>Tax(in Rs.)</th>	
+			<th align=center class="title" title="Penalty">Penalty<br>(in Rs.)</th>	
+			<th align=center class="title" title="Total Amount">Total<br>(in Rs.)</th>
+			<th align=center class="title" title="Total Amount">Type of Building</th>
+		</tr>
+	    	  
+		<tr>
+			<td  align=center width="5%"><font face="Verdana" size="1" color="#000080">1</font></td>
+			<td  align=center >WD-05
+			</td> 
+			<td  align=center ><font face="Verdana" size="1" color="#000080"><a href="javascript:fnLink('0','11170406','02','WD-05','Property')" title="Click here to view the dues">11170406</a></font></td>		
+			<td  align=left ><font face="Verdana" size="1" color="#000080">N.KARUPUSAMY,<br>138,<br>ABIRAMI NAGAR,<br>town</font></td> 
+			<td  align=center width="3%">C</td>
+			<td  align=right >418.00</td> 
+			<td  align=right >0.00</td>
+			<td  align=right >418.00</td>
+			<td  align=right  nowrap>3.5 RESIDENTIAL</td>
+		</tr>
+	  	  
+	</table>
+
+</td></tr></table></div>
+
+</form>
+<script language="Javascript1.2">
+	var objPopUp;
+	function fnLink(varFlag,varAssNo,varZone,varWard,varDueType)
+	{
+		if(typeof objPopUp == "object")
+			objPopUp.close();
+		//objPopUp= window.open('repKnowMyDuesWin.asp?hdflag=' + varFlag + '&parAssNo=' + varAssNo + '&parZone=' + varZone + '&parWard=' + varWard + '&parDueType=' + varDueType,'frmAssesseeDetails','WIDTH=700,HEIGHT=235,TOP=210,LEFT=35,scrollbars=yes,resizeable=yes,menubar=no,toolbars=0,status=no')
+		document.frmAssDetails.action='repKnowMyDuesWin.asp?hdflag=' + varFlag + '&parAssNo=' + varAssNo + '&parZone=' + varZone + '&parWard=' + varWard + '&parDueType=' + varDueType;
+		document.frmAssDetails.method="post";
+		document.frmAssDetails.submit();
+	}	
+
+	function subOnUnLoad()
+	{
+		if(typeof objPopUp == "object")
+			objPopUp.close();
+	}
+</script>
+<br><center><input type=button value=" Back " class="mainoption" onClick="fnBack();" id=button1 name=button1>
+</body>
+<script language="Javascript1.2">
+	function fnBack()
+	{
+		document.frmAssDetails.hdnCode.value = "02" + "'^" + "WD-05";
+		document.frmAssDetails.action="repAssesseeDet.asp?Type=P";
+		document.frmAssDetails.method="post";
+		document.frmAssDetails.submit();
+	}
+	
+	function fnWardSubmit()
+	{
+		document.frmAssDetails.hdnCode.value = "02"
+		document.frmAssDetails.action="repAssesseeDet.asp?Type=P";
+		document.frmAssDetails.method="post";
+		document.frmAssDetails.submit();
+	}
+</script>
+</html>		  						
+   <div id="content">
+
+        	
+    </div>
+	<div id="footer">
+		Copyright &reg; 2012. Coimbatore City Municipal Corporation.
+	</div>
+</div>
+</body>
+</html>
+
+<!-- <script> window.location.href=window.location.href </script> -->
+
